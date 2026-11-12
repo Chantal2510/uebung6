@@ -85,13 +85,13 @@ Nach der Kachelerzeugung wurde die Summe aller Dateien unter `tiles_xyz/poi/` ge
 
 ## 8. Veröffentlichung auf GitHub Pages
 
-Der Ordner heißt im lokalen Projekt kleingeschrieben `uebung6`. Wenn er mit diesem Namen im veröffentlichten Repository-Root liegt, ist der Kachelpfad:
+Das lokale `uebung6`-Verzeichnis ist selbst das Repository-Root. Das eingetragene GitHub-Remote ist `https://github.com/Chantal2510/uebung6.git`. Wenn GitHub Pages für den Branch `main` und das Repository-Root aktiviert ist, lautet der Projektseiten-Pfad:
 
 ```text
-https://<GITHUB-USERNAME>.github.io/<REPOSITORY-NAME>/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf
+https://chantal2510.github.io/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf
 ```
 
-Der exakte Hostname kann hier noch nicht eingesetzt werden: Der lokale Ordner ist kein Git-Repository und enthält keine GitHub-Remote-URL. Nach dem Eintragen des richtigen Benutzernamens und Repository-Namens muss GitHub Pages außerdem manuell aktiviert werden. Es wurden keine GitHub-Einstellungen geändert und kein Commit oder Push ausgeführt.
+GitHub Pages muss in den Repository-Einstellungen noch aktiviert werden, falls das nicht bereits geschehen ist. Es wurden keine GitHub-Einstellungen geändert.
 
 Für die Veröffentlichung die fertigen Kacheln `tiles_xyz/poi/` auswählen. Die Rohdateien und die bereinigte Quelldatei werden durch `.gitignore` ausgeschlossen. Lokale Bevölkerungskacheln bleiben ebenfalls ausgeschlossen. Nicht alle Dateien eines Projekts werden automatisch durch `.gitignore` von GitHub Pages verborgen, wenn sie bereits versioniert sind; vor einem Commit deshalb die Dateiliste prüfen.
 
@@ -127,14 +127,14 @@ Diese beiden Zusatz-Layer wurden lokal wiederhergestellt. Gemessene Größen: `t
 1. **Layer → Layer hinzufügen → Vector-Tiles-Layer → Neu** öffnen und eine generische Verbindung anlegen.
 2. Name: `Cafés Mainz`; Typ: **XYZ**.
 3. Min. Zoom: **10**, Max. Zoom: **14**.
-4. URL (Benutzer- und Repository-Namen ersetzen):
+4. URL:
 
    ```text
-   https://<GITHUB-USERNAME>.github.io/<REPOSITORY-NAME>/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf
+   https://chantal2510.github.io/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf
    ```
 
 5. Verbindung speichern, den Layer hinzufügen und auf Mainz zoomen.
-6. Optional den Mapbox-Style `qgis/poi_style.json` verwenden. Darin vor dem Laden ebenfalls die URL-Platzhalter ersetzen. Die Cafés werden orange mit weißer Kontur und ab Zoom 13 mit Namen angezeigt.
+6. Optional den Mapbox-Style `qgis/poi_style.json` verwenden. Die URL ist dort bereits eingetragen. Die Cafés werden orange mit weißer Kontur und ab Zoom 13 mit Namen angezeigt.
 
 Für einen lokalen Test mit VS Code Live Server hängt die URL davon ab, welcher Ordner als Webroot dient:
 

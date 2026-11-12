@@ -5,7 +5,7 @@
     "poi": {
       "type": "vector",
       "tiles": [
-        "https://<GITHUB-USERNAME>.github.io/<REPOSITORY-NAME>/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf"
+        "https://chantal2510.github.io/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 10,
       "maxzoom": 14

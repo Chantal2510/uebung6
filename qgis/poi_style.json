@@ -1,0 +1,47 @@
+{
+  "version": 8,
+  "name": "Mainzer Cafés",
+  "sources": {
+    "poi": {
+      "type": "vector",
+      "tiles": [
+        "https://<GITHUB-USERNAME>.github.io/<REPOSITORY-NAME>/uebung6/tiles_xyz/poi/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 10,
+      "maxzoom": 14
+    }
+  },
+  "layers": [
+    {
+      "id": "poi-cafes",
+      "type": "circle",
+      "source": "poi",
+      "source-layer": "poi",
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "#c2410c",
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 2
+      }
+    },
+    {
+      "id": "poi-cafe-names",
+      "type": "symbol",
+      "source": "poi",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": 12,
+        "text-offset": [0, 1.2],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#7c2d12",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1.5
+      }
+    }
+  ]
+}

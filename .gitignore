@@ -1,0 +1,11 @@
+.DS_Store
+
+# GeoJSON-Quelldaten und bereinigte Quelldatei bleiben lokal.
+/geodata/*.geojson
+/geodata/*.tif
+/data/*.geojson
+
+# Lokale Bevölkerungskacheln werden nicht veröffentlicht.
+/tiles/population.pmtiles
+/tiles_xyz/population/
+/tiles_xyz/buildings/
